@@ -1,3 +1,27 @@
-<p>
-  cars works!
-</p>
+<div class="container"> 
+  <div class="row mt-3">
+    <div class = 'col-7'>
+      <table class="table ">
+        <thead>
+          <tr>
+            <th class="table-dark">ID</th>
+            <th class="table-dark">Marca</th>
+            <th class="table-dark">Linea</th>
+            <th class="table-dark">Modelo</th>
+         
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let car of cars">
+            <td class ="bold-text">{{car.id}}</td>
+            <td>{{car.marca}}</td>
+            <td>{{car.linea}}</td>
+            <td>{{car.modelo}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class = 'col-5'></div>
+  </div>
+
+</div>
