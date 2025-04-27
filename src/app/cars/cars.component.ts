@@ -18,4 +18,8 @@ export class CarsComponent implements OnInit {
     });
   }
 
+  getTotals(marca: string){
+    return this.cars.filter(car => car.marca === marca).length;
+  }
+
 }
